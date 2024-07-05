@@ -14,3 +14,41 @@ insert into medicamentos(nombre,laboratorio,precio,cantidad,fechavencimiento) va
 insert into medicamentos(nombre,laboratorio,precio,cantidad,fechavencimiento) values('Paracetamol 500','Bago',1.90,20,'2008-02-01'); 
 insert into medicamentos(nombre,laboratorio,precio,cantidad,fechavencimiento) values('Bayaspirina','Bayer',2.10,150,'2009-12-01'); 
 insert into medicamentos(nombre,laboratorio,precio,cantidad,fechavencimiento) values('Amoxidal jarabe','Bayer',5.10,250,'2010-10-01');
+
+
+create table libro( 
+codigo serial, 
+titulo varchar(40) not null, 
+autor varchar(20) default 'Desconocido', 
+editorial varchar(15), 
+precio decimal(6,2) , 
+primary key(codigo) 
+);
+
+
+insert into libro (titulo,autor,editorial,precio) values('El aleph','Borges','Planeta',15.90); 
+insert into libro (titulo,autor,editorial,precio) values('Antologia poetica','J.L. Borges','Planeta',null); 
+insert into libro (titulo,autor,editorial,precio) values('Alicia en el pais de las maravillas','Lewis Carroll',null,19.90);
+insert into libro (titulo,autor,editorial,precio) values('Matematica estas ahi','Paenza','sigloXXI',15); 
+insert into libro (titulo,autor,editorial,precio) values('Martin Fierro','Jose Hernandez',default,40); 
+insert into libro (titulo,autor,editorial,precio) values('Aprenda PHP','Mario Molina','Nuevo Siglo',56.50); 
+
+create table medicamento( 
+codigo serial, 
+nombre varchar(20), 
+laboratorio varchar(20), 
+precio decimal(6,2), 
+cantidad smallint, 
+fechavencimiento date not null, 
+numerolote int default null, 
+primary key(codigo) 
+);
+
+insert into medicamento(nombre,laboratorio,precio,cantidad,fechavencimiento,numerolote) values('Sertal','Roche',5.2,1,'2005-02-01',null); 
+insert into medicamento(nombre,laboratorio,precio,cantidad,fechavencimiento,numerolote) values('Buscapina','Roche',4.10,3,'2006-03-01',null); 
+insert into medicamento(nombre,laboratorio,precio,cantidad,fechavencimiento,numerolote) values('Amoxidal 500','Bayer',15.60,100,'2007-05-01',null);
+insert into medicamento(nombre,laboratorio,precio,cantidad,fechavencimiento,numerolote) values('Paracetamol 500','Bago',1.90,20,'2008-02-01',null); 
+insert into medicamento(nombre,laboratorio,precio,cantidad,fechavencimiento,numerolote) values('Bayaspirina',null,2.10,null,'2009-12-01',null); 
+insert into medicamento(nombre,laboratorio,precio,cantidad,fechavencimiento,numerolote) values('Amoxidal jarabe','Bayer',null,250,'2009-12-15',null); 
+insert into medicamento(nombre,laboratorio,precio,cantidad,fechavencimiento,numerolote) values('Bayaspirina',null,2.10,null,'2009-12-01',null); 
+insert into medicamento(nombre,laboratorio,precio,cantidad,fechavencimiento,numerolote) values('Amoxidal jarabe','Bayer',null,250,'2009-12-15',null); 
