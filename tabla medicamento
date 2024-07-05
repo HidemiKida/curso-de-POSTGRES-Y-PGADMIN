@@ -1,0 +1,19 @@
+create table medicamento( 
+codigo serial, 
+nombre varchar(20), 
+laboratorio varchar(20), 
+precio decimal(6,2), 
+cantidad smallint, 
+fechavencimiento date not null, 
+numerolote int default null, 
+primary key(codigo) 
+);
+
+insert into medicamento(nombre,laboratorio,precio,cantidad,fechavencimiento,numerolote) values('Sertal','Roche',5.2,1,'2005-02-01',null); 
+insert into medicamento(nombre,laboratorio,precio,cantidad,fechavencimiento,numerolote) values('Buscapina','Roche',4.10,3,'2006-03-01',null); 
+insert into medicamento(nombre,laboratorio,precio,cantidad,fechavencimiento,numerolote) values('Amoxidal 500','Bayer',15.60,100,'2007-05-01',null);
+insert into medicamento(nombre,laboratorio,precio,cantidad,fechavencimiento,numerolote) values('Paracetamol 500','Bago',1.90,20,'2008-02-01',null); 
+insert into medicamento(nombre,laboratorio,precio,cantidad,fechavencimiento,numerolote) values('Bayaspirina',null,2.10,null,'2009-12-01',null); 
+insert into medicamento(nombre,laboratorio,precio,cantidad,fechavencimiento,numerolote) values('Amoxidal jarabe','Bayer',null,250,'2009-12-15',null); 
+insert into medicamento(nombre,laboratorio,precio,cantidad,fechavencimiento,numerolote) values('Bayaspirina',null,2.10,null,'2009-12-01',null); 
+insert into medicamento(nombre,laboratorio,precio,cantidad,fechavencimiento,numerolote) values('Amoxidal jarabe','Bayer',null,250,'2009-12-15',null); 
