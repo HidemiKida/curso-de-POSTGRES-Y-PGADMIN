@@ -26,7 +26,7 @@ insert into clientes (nombre, domicilio, ciudad, provincia) values ('Garcia Juan
 insert into clientes (nombre, domicilio, ciudad, provincia) values ('Perez Luis', 'Sarmiento 444', 'Rosario', 'Santa Fe');
 insert into clientes (nombre, domicilio, ciudad, provincia) values ('Pereyna Lucas', 'San Martin 555', 'Cruz del eje', 'Cordoba');
 insert into clientes (nombre, domicilio, ciudad, provincia) values ('Gomez Ines', 'San Martin 666', 'Santa Fe', 'Santa fe ');
-insert into clientes (nombre, domicilio, ciudad, provincia) values ('Torres Fabiola', 'Alem 777', 'Villa del rosario', 'COrdoba');
+insert into clientes (nombre, domicilio, ciudad, provincia) values ('Torres Fabiola', 'Alem 777', 'Villa del rosario', 'Cordoba');
 insert into clientes (nombre, domicilio, ciudad, provincia) values ('Lopez Carlos', 'null', 'Cruz del eje', 'Cordoba');
 insert into clientes (nombre, domicilio, ciudad, provincia) values ('Ramos Betina', 'San Martin 999', 'Cordoba', 'Cordoba' );
 insert into clientes (nombre, domicilio, ciudad, provincia) values ('Lopez Lucas', 'San Martin 1010', 'Posadas', 'Misiones');
