@@ -39,3 +39,6 @@ insert into empleados values('Andres Costa', '28444555', NULL, 'Secretaria', NUL
 
 
 
+insert into empleados values('Rodolfo Perez','35555888','Coronel Olmedo 588','Sistemas',4000,3); 
+insert into empleados values('Martina Rodriguez','30141414','Sarmiento 1234','Administracion',3800,4); 
+insert into empleados values('Andres Costa', '28444555', NULL, 'Secretaria', NULL, 2);
