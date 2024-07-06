@@ -1,0 +1,11 @@
+insert into clientes (nombre, domicilio, ciudad, provincia, telefono) values ('Lopez Marcos', 'Colon 111', 'Cordoba', 'Cordoba', 0920903872);
+insert into clientes (nombre, domicilio, ciudad, provincia, telefono) values ('Perez Ana', 'San Martin 222', 'Cruz del eje', 'Cordoba', 'null');
+insert into clientes (nombre, domicilio, ciudad, provincia, telefono) values ('Garcia Juan', 'Rivadavia 333', 'Villa del Rosario', 'Cordoba', 52342321);
+insert into clientes (nombre, domicilio, ciudad, provincia, telefono) values ('Perez Luis', 'Sarmiento 444', 'Rosario', 'Santa Fe', 'null');
+insert into clientes (nombre, domicilio, ciudad, provincia, telefono) values ('Pereyna Lucas', 'San Martin 555', 'Cruz del eje', 'Cordoba', 132242323);
+insert into clientes (nombre, domicilio, ciudad, provincia, telefono) values ('Gomez Ines', 'San Martin 666', 'Santa Fe', 'Santa fe ', 6757554);
+insert into clientes (nombre, domicilio, ciudad, provincia, telefono) values ('Torres Fabiola', 'Alem 777', 'Villa del rosario', 'COrdoba', 'null');
+insert into clientes (nombre, domicilio, ciudad, provincia, telefono) values ('Lopez Carlos', 'null', 'Cruz del eje', 'Cordoba ', 0979748532);
+insert into clientes (nombre, domicilio, ciudad, provincia, telefono) values ('Ramos Betina', 'San Martin 999', 'Cordoba', 'Cordoba ', 'null');
+insert into clientes (nombre, domicilio, ciudad, provincia, telefono) values ('Lopez Lucas', 'San Martin 1010', 'Posadas', 'Misiones', 2232443);
+
