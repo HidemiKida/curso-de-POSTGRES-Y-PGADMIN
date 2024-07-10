@@ -6,6 +6,8 @@ teléfono varchar(11),
 mail varchar(30)
 );
 
+Inserciones:
+
 INSERT INTO agenda (apellido, nombre, domicilio, teléfono, mail) VALUES ('García', 'Juan', 'Calle Falsa 123', '0987654321', 'juan.garcia@example.com');
 INSERT INTO agenda (apellido, nombre, domicilio, teléfono, mail) VALUES ('Pérez', 'María', 'Av. Siempre Viva 456', '0987654322', 'maria.perez@example.com');
 INSERT INTO agenda (apellido, nombre, domicilio, teléfono, mail) VALUES ('López', 'Carlos', 'Boulevard 789', '0987654323', 'carlos.lopez@example.com');
