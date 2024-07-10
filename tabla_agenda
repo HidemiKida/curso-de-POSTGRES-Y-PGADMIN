@@ -1,4 +1,4 @@
-crate table agenda(
+create table agenda(
 apellido varchar(30),
 nombre varchar(20) not null,
 domicilio varchar(30),
@@ -6,4 +6,8 @@ teléfono varchar(11),
 mail varchar(30)
 );
 
-
+INSERT INTO agenda (apellido, nombre, domicilio, teléfono, mail) VALUES ('García', 'Juan', 'Calle Falsa 123', '0987654321', 'juan.garcia@example.com');
+INSERT INTO agenda (apellido, nombre, domicilio, teléfono, mail) VALUES ('Pérez', 'María', 'Av. Siempre Viva 456', '0987654322', 'maria.perez@example.com');
+INSERT INTO agenda (apellido, nombre, domicilio, teléfono, mail) VALUES ('López', 'Carlos', 'Boulevard 789', '0987654323', 'carlos.lopez@example.com');
+INSERT INTO agenda (apellido, nombre, domicilio, teléfono, mail) VALUES ('Rodríguez', 'Ana', 'Plaza Mayor 101', '0987654324', 'ana.rodriguez@example.com');
+INSERT INTO agenda (apellido, nombre, domicilio, teléfono, mail) VALUES ('Martínez', 'Luis', 'Calle Luna 202', '0987654325', 'luis.martinez@example.com');
