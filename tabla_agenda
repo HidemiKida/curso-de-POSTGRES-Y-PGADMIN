@@ -1,0 +1,9 @@
+crate table agenda(
+apellido varchar(30),
+nombre varchar(20) not null,
+domicilio varchar(30),
+teléfono varchar(11),
+mail varchar(30)
+);
+
+
