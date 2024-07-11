@@ -1,0 +1,27 @@
+create table guardias(
+documento char(8),
+nombre varchar(30),
+sexo char(1), /* 'f'o'm' */
+domicilio varchar(30),
+primary key (documento)
+);
+
+
+INSERT INTO guardias (documento, nombre, sexo, domicilio) VALUES ('12345678', 'Pedro Gómez', 'm', 'Calle Falsa 123');
+INSERT INTO guardias (documento, nombre, sexo, domicilio) VALUES ('87654321', 'Ana Pérez', 'f', 'Avenida Siempre Viva 456');
+INSERT INTO guardias (documento, nombre, sexo, domicilio) VALUES ('11223344', 'Carlos Ruiz', 'm', 'Boulevard del Sol 789');
+INSERT INTO guardias (documento, nombre, sexo, domicilio) VALUES ('44332211', 'Laura Torres', 'f', 'Calle Luna 101');
+INSERT INTO guardias (documento, nombre, sexo, domicilio) VALUES ('55667788', 'Marta Fernández', 'f', 'Avenida Estrella 202');
+
+create table tareas(
+codigo serial,
+domicilio varchar(30),
+descripción varchar(30),
+horario char(2), /* 'AM' o 'PM'*/
+primary key (codigo)
+);
+
+INSERT INTO tareas (domicilio, descripción, horario) VALUES ('Calle Falsa 123', 'Vigilancia nocturna', 'PM');
+INSERT INTO tareas (domicilio, descripción, horario) VALUES ('Avenida Siempre Viva 456', 'Control de acceso', 'AM');
+INSERT INTO tareas (domicilio, descripción, horario) VALUES ('Boulevard del Sol 789', 'Ronda de seguridad', 'PM');
+INSERT INTO tareas (domicilio, descripción, horario) VALUES ('Calle Luna 101', 'Monitoreo de cámaras', 'AM');
