@@ -1,0 +1,26 @@
+create table deportes(
+codigo serial,
+nombre varchar(30),
+profesor varchar(30),
+primary key(codigo)
+);
+
+INSERT INTO deportes (nombre, profesor) VALUES ('Fútbol', 'Juan Pérez');
+INSERT INTO deportes (nombre, profesor) VALUES ('Básquetbol', 'María González');
+INSERT INTO deportes (nombre, profesor) VALUES ('Tenis', 'Carlos Sánchez');
+INSERT INTO deportes (nombre, profesor) VALUES ('Natación', 'Ana Martínez');
+
+create table inscriptos(
+documento char(8),
+codigodeporte smallint not null,
+matricula char(1) --'s'=paga 'n'=impaga
+);
+
+INSERT INTO inscriptos (documento, codigodeporte, matricula) VALUES ('12345678', 2, 's');
+INSERT INTO inscriptos (documento, codigodeporte, matricula) VALUES ('87654321', 2, 'n');
+INSERT INTO inscriptos (documento, codigodeporte, matricula) VALUES ('56781234', 3, 's');
+INSERT INTO inscriptos (documento, codigodeporte, matricula) VALUES ('43218765', 4, 'n');
+INSERT INTO inscriptos (documento, codigodeporte, matricula) VALUES ('23456789', 3, 's');
+INSERT INTO inscriptos (documento, codigodeporte, matricula) VALUES ('98765432', 2, 'n');
+INSERT INTO inscriptos (documento, codigodeporte, matricula) VALUES ('34567890', 3, 's');
+INSERT INTO inscriptos (documento, codigodeporte, matricula) VALUES ('09876543', 5, 'n');
