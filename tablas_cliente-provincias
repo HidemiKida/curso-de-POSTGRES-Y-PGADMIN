@@ -13,6 +13,8 @@ INSERT INTO clientes (nombre, domicilio, ciudad, codigoprovincia) VALUES ('Carlo
 INSERT INTO clientes (nombre, domicilio, ciudad, codigoprovincia) VALUES ('Ana García', 'Plaza Mayor 101', 'Quito', 1);
 INSERT INTO clientes (nombre, domicilio, ciudad, codigoprovincia) VALUES ('Luis Martínez', 'Calle Luna 202', 'Guayaquil', 2);
 
+INSERT INTO clientes (nombre, domicilio, ciudad, codigoprovincia) VALUES ('Pedro Fernández', 'Calle del Sol 456', 'Manta', 4);
+INSERT INTO clientes (nombre, domicilio, ciudad, codigoprovincia) VALUES ('Laura Gómez', 'Avenida de la Luna 789', 'Ambato', 5);
 
 create table provincias(
 codigo serial,
