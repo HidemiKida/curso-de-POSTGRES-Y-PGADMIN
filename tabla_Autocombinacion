@@ -1,0 +1,13 @@
+create table clientes(
+nombre varchar(30),
+sexo char(1),--'f'=femenino, 'm'=masculino
+edad int,
+domicilio varchar(30)
+);
+
+INSERT INTO clientes (nombre, sexo, edad, domicilio) VALUES ('Carlos Martínez', 'm', 35, 'Calle Luna 123');
+INSERT INTO clientes (nombre, sexo, edad, domicilio) VALUES ('Ana Gómez', 'f', 28, 'Avenida Sol 456');
+INSERT INTO clientes (nombre, sexo, edad, domicilio) VALUES ('Luis Rodríguez', 'm', 42, 'Boulevard Estrella 789');
+INSERT INTO clientes (nombre, sexo, edad, domicilio) VALUES ('María Fernández', 'f', 31, 'Calle Falsa 101');
+INSERT INTO clientes (nombre, sexo, edad, domicilio) VALUES ('Javier Torres', 'm', 50, 'Avenida Siempre Viva 202');
+INSERT INTO clientes (nombre, sexo, edad, domicilio) VALUES ('Laura López', 'f', 24, 'Calle Luna 303');
