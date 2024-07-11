@@ -1,0 +1,27 @@
+create table clientes(
+codigo serial,
+nombre varchar(30),
+domicilio varchar(30),
+ciudad varchar(20),
+codigoprovincia smallint not null,
+primary key(codigo)
+);
+
+INSERT INTO clientes (nombre, domicilio, ciudad, codigoprovincia) VALUES ('Juan Pérez', 'Calle Falsa 123', 'Quito', 1);
+INSERT INTO clientes (nombre, domicilio, ciudad, codigoprovincia) VALUES ('María López', 'Av. Siempre Viva 456', 'Guayaquil', 2);
+INSERT INTO clientes (nombre, domicilio, ciudad, codigoprovincia) VALUES ('Carlos Rodríguez', 'Boulevard 789', 'Cuenca', 3);
+INSERT INTO clientes (nombre, domicilio, ciudad, codigoprovincia) VALUES ('Ana García', 'Plaza Mayor 101', 'Quito', 1);
+INSERT INTO clientes (nombre, domicilio, ciudad, codigoprovincia) VALUES ('Luis Martínez', 'Calle Luna 202', 'Guayaquil', 2);
+
+
+create table provincias(
+codigo serial,
+nombre varchar(20),
+primary key (codigo)
+);
+
+INSERT INTO provincias (nombre) VALUES ('Pichincha');
+INSERT INTO provincias (nombre) VALUES ('Guayas');
+INSERT INTO provincias (nombre) VALUES ('Azuay');
+
+
