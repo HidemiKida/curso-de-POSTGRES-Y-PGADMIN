@@ -1,0 +1,9 @@
+insert into proveedores (nombre, domicilio) values ('Bebida Cola', 'Colon 123');
+insert into proveedores (nombre, domicilio) values ('Carnes Unica', 'Caseros 222');
+insert into proveedores (nombre, domicilio) values ('Lacteos Blanca', 'San Martin 987');
+insert into clientes(nombre, domicilio) values ('Supermercado Lopez', 'Avellaneda 34');
+insert into clientes(nombre, domicilio) values ('Almacenes Anita', 'Colon 987');
+insert into clientes(nombre, domicilio) values ('Garcia Juan', 'Sucre 345');
+insert into empleados values ('23333333', 'Federico', 'Lopez','Colon 987' );
+insert into empleados values ('28888888', 'Ana', 'Marquez','Sucre 333' );
+insert into empleados values ('30111111', 'Luis', 'Perez', 'Caseros  956');
