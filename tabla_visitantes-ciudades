@@ -1,0 +1,28 @@
+create table visitantes(
+nombre varchar(30),
+edad smallint,
+sexo char(1) default 'f',
+domicilio varchar(30),
+codigociudad smallint not null,
+mail varchar(30),
+montocompara decimal (6,2)
+);
+
+INSERT INTO visitantes (nombre, edad, sexo, domicilio, codigociudad, mail, montocompara) VALUES ('Juan Perez', 28, 'm', 'Av. Amazonas 123', 1, 'juan.perez@example.com', 150.75);
+INSERT INTO visitantes (nombre, edad, sexo, domicilio, codigociudad, mail, montocompara) VALUES ('Maria Lopez', 34, 'f', 'Calle 10 de Agosto 456', 2, 'maria.lopez@example.com', 200.00);
+INSERT INTO visitantes (nombre, edad, sexo, domicilio, codigociudad, mail, montocompara) VALUES ('Carlos Sanchez', 22, 'm', 'Calle Luis Cordero 789', 3, 'carlos.sanchez@example.com', 75.50);
+INSERT INTO visitantes (nombre, edad, sexo, domicilio, codigociudad, mail, montocompara) VALUES ('Ana Torres', 29, 'f', 'Av. Los Shyris 101', 4, 'ana.torres@example.com', 180.25);
+INSERT INTO visitantes (nombre, edad, domicilio, codigociudad, mail, montocompara) VALUES ('Luis Gomez', 40, 'Calle Bolívar 303', 1, 'luis.gomez@example.com', 90.00);
+INSERT INTO visitantes (nombre, edad, domicilio, codigociudad, mail, montocompara) VALUES('Laura Martinez', 27, 'Av. 9 de Octubre 505', 5, 'laura.martinez@example.com', 120.75);
+
+
+create table ciudades(
+codigo serial,
+nombre varchar(20),
+primary key(codigo)
+);
+
+INSERT INTO ciudades (nombre) VALUES ('Quito');
+INSERT INTO ciudades (nombre) VALUES ('Guayaquil');
+INSERT INTO ciudades (nombre) VALUES ('Cuenca');
+INSERT INTO ciudades (nombre) VALUES ('Ambato');
