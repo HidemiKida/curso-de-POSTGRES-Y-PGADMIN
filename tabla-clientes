@@ -1,0 +1,14 @@
+create table clientes (
+codigo int, 
+nombre varchar (30),
+domicilio varchar (30), 
+ciudad varchar (20), 
+referenciadopor int, 
+primary key (codigo)
+);
+
+insert into clientes values (50, 'Juan Perez', 'Sucre 123', 'Cordova', 11);
+insert into clientes values (90, 'Marta Juarez', 'Colon 345', 'Cadiz', null);
+insert into clientes values (110, 'Fabian Torrez', 'Sucre 123', 'San Martin', 50);
+insert into clientes values (125, 'Susana Garcia', 'Colon 122', 'Colon 122', 90);
+insert into clientes values (140, 'Ana Herrero', 'Colon 890', 'Cadiz', 9);
