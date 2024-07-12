@@ -1,0 +1,40 @@
+create table socios ( 
+documento char(8) not null, 
+nombre varchar (30), 
+domicilio varchar(30), 
+primary key (documento)
+);
+
+create table deportes (
+codigo serial, 
+nombre varchar (20), 
+profesor varchar (15), 
+primary key (codigo)
+);
+
+create table inscriptos( 
+documento char(8) not null, 
+codigodeporte smallint not null, 
+anio char(4), 
+matricula char(1),
+--'s'=paga, 'n'=impaga primary key(documento, codigodeporte, anio)
+);
+
+insert into socios values ('22222222', 'Ana Acosta', 'Avellaneda 111'); 
+insert into socios values ('23333333', 'Betina Bustos', 'Bulnes 222'); 
+insert into socios values ('24444444', 'Carlos Castro', 'Caseros 333'); 
+insert into socios values ('25555555', 'Daniel Duarte', 'Dinamarca 44');
+
+insert into deportes (nombre, profesor) values ('Basquet', 'Juan Juarez ' );
+insert into deportes (nombre, profesor) values ('Futbol', 'Pedro Perez  ' );
+insert into deportes (nombre, profesor) values ('Natacion', 'Marina Morales ' );
+insert into deportes (nombre, profesor) values ('Tenis', 'Marina Morales' );
+
+insert into inscriptos values ('22222222', 3, '2006', 's');
+insert into inscriptos values ('23333333', 3, '2006', 's');
+insert into inscriptos values ('24444444', 3, '2006', 'n');
+insert into inscriptos values ('22222222', 3, '2005', 's');
+insert into inscriptos values ('22222222', 3, '2007', 'n');
+insert into inscriptos values ('24444444', 1, '2006', 's');
+insert into inscriptos values ('24444444', 2, '2006', 's');
+insert into inscriptos values ('26666666', 0, '2006', 's');
