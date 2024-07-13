@@ -7,7 +7,7 @@ primary key (codigo)
 insert into ciudades (nombre) values ('Cordoba');
 insert into ciudades (nombre) values ('Cruz del Eje');
 insert into ciudades (nombre) values ('Carlos Paz');
-insert into ciudades (nombre) values ('La Falt¡da');
+insert into ciudades (nombre) values ('La Falda');
 insert into ciudades (nombre) values ('Villa Maria');
 
 create table clientes (
