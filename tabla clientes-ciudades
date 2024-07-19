@@ -1,0 +1,28 @@
+create table ciudades(
+codigo serial, 
+nombre varchar(20), 
+primary key (codigo)
+);
+
+insert into ciudades (nombre) values ('Cordoba');
+insert into ciudades (nombre) values ('Cruz del Eje');
+insert into ciudades (nombre) values ('Carlos Paz');
+insert into ciudades (nombre) values ('La Falda');
+insert into ciudades (nombre) values ('Villa Maria');
+
+create table clientes (
+codigo serial, 
+nombre varchar (30), 
+domicilio varchar(30), 
+codigociudad smallint not null, 
+primary key(codigo)
+);
+
+insert into clientes(nombre, domicilio, codigociudad) values ('Lopez Marcos','Colon 111', 1);
+insert into clientes(nombre, domicilio, codigociudad) values ('Lopez Hector','San Martin 222',1);
+insert into clientes(nombre, domicilio, codigociudad) values ('Perez Ana','San Martin 333',2);
+insert into clientes(nombre, domicilio, codigociudad) values ('Garcia Juan','Rivadavia 444',3);
+insert into clientes(nombre, domicilio, codigociudad) values ('Perez Luis','Sarmiento555',3);
+insert into clientes(nombre, domicilio, codigociudad) values ('Gomez Ines','San Martin 666',4);
+insert into clientes(nombre, domicilio, codigociudad) values ('Torres Fabiola','Alem 777',5);
+insert into clientes(nombre, domicilio, codigociudad) values ('Garcia Luis','Sucre 888',5);

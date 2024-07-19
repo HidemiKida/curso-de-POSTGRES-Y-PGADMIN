@@ -1,0 +1,35 @@
+create table secciones (
+codigo serial, 
+nombre varchar (20), 
+sueldo decimal (5,2), ç
+primary key(codigo)
+);
+
+create table empleados (
+legado serial, 
+documento char(8), 
+sexo char(8), 
+apelliod varchar(20), 
+nombre varchar(20), 
+domicilio varchar(30), 
+seccion smallint not null, 
+cantidadhijos smallint, 
+estadocivil char (10), 
+fechaingreso date, 
+primary key (legado)
+);
+
+insert into secciones (nombre, sueldo) values ('Adminsitracion', 300);
+insert into secciones (nombre, sueldo) values ('Contaduria', 400);
+insert into secciones (nombre, sueldo) values ('Sistemas', 500);
+
+INSERT INTO empleados (documento, sexo, apellido, nombre, domicilio, seccion, cantidadhijos, estadocivil, fechaingreso) 
+VALUES ('22222222', 'f', 'Lopez', 'Ana', 'Colon 123', 1, 2, 'Casado', '1990-02-09');
+INSERT INTO empleados (documento, sexo, apellido, nombre, domicilio, seccion, cantidadhijos, estadocivil, fechaingreso) 
+VALUES ('23333333', 'm', 'Lopez', 'Luis', 'Sucre 235', 1, 0, 'Soltero', '1998-02-10');
+INSERT INTO empleados (documento, sexo, apellido, nombre, domicilio, seccion, cantidadhijos, estadocivil, fechaingreso) 
+VALUES ('24444444', 'm', 'Garcia', 'Marcos', 'Sarmiento 1234', 2, 3, 'Divorciado', '1998-07-12');
+INSERT INTO empleados (documento, sexo, apellido, nombre, domicilio, seccion, cantidadhijos, estadocivil, fechaingreso) 
+VALUES ('25555555', 'f', 'Gomez', 'Pablo', 'Bulnes 321', 3, 2, 'Casado', '1990-10-09');
+INSERT INTO empleados (documento, sexo, apellido, nombre, domicilio, seccion, cantidadhijos, estadocivil, fechaingreso) 
+VALUES ('26666666', 'f', 'Perez', 'Laura', 'Peru 1254', 3, 3, 'Casado', '2000-05-09');

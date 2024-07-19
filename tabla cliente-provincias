@@ -1,0 +1,9 @@
+insert into provincias values (1, 'Cordoba'); 
+insert into provincias values(2, 'Santa Fe'); 
+insert into provincias values (3, 'Misiones'); 
+insert into provincias values(4, 'Rio Negro');
+
+insert into clientes (nombre, domicilio, ciudad, codigoprovincia) values ('Perez Juan', 'San Martin 123', 'Carlos',1);
+insert into clientes (nombre, domicilio, ciudad, codigoprovincia) values ('Moreno Marcos', 'Colon 234', 'Rosario',2);
+insert into clientes (nombre, domicilio, ciudad, codigoprovincia) values ('Acosta Ana', 'Avellanada 333', 'Posada',3);
+insert into clientes (nombre, domicilio, ciudad, codigoprovincia) values ('Luis Lopez', 'Juarez 555', 'La plata',6);

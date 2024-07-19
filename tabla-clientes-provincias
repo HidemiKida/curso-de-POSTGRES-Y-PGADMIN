@@ -1,0 +1,23 @@
+create table clientes (
+codigo serial, 
+nombre varchar(30), 
+domicilio varchar(30), 
+ciudad varchar(20), 
+codigoprovincia smallint, 
+primary key(codigo)
+);
+
+create table provincias (
+codigo serial, 
+nombre varchar (20), 
+primary key(codigo)
+);
+
+insert into provincias values(1, 'Cordoba');
+insert into provincias values(2, 'Santa fe');
+insert into provincias values(3, 'Misiones');
+insert into provincias values(4, 'Rio Negro');
+
+insert into clientes (nombre, domicilio, ciudad, codigoprovincia) values ('Perez Juan', 'San Martin 123', 'Carlos Paz', 1);
+insert into clientes (nombre, domicilio, ciudad, codigoprovincia) values ('Moreno Marcos','Colon 234', 'Rosario', 2);
+insert into clientes (nombre, domicilio, ciudad, codigoprovincia) values ('Acosta Ana', 'Avellaneda 333', 'Posadas', 3);
